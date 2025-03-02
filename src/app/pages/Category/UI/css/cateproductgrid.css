@@ -1,0 +1,38 @@
+.grid-view .product-item {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    vertical-align: top;
+}
+.list-view .product-item {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 10px 0;
+}
+.list-view .list1 {
+    display: flex;
+}
+
+.list-view .list {
+    margin-left : 15px;
+}
+.grid-view .list1 {
+    display: block; /* or inline-block if needed */
+}
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+.product img {
+    width: 100%;
+    height: auto;
+}
+.price-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    text-align: right;
+    margin-left: 10px;
+    }

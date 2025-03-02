@@ -1,0 +1,225 @@
+.box-large {
+  width: 720px;                     /* กำหนดความกว้างของกล่องที่สอง */
+  box-sizing: border-box;
+    padding: 20px 35px 0 20px;
+    width: 100%;
+      background-color: #FFFFFF;
+
+}
+
+
+.detailpirce{
+  margin-top:25px;
+  padding:0 20px;
+}
+
+.flex-colum{
+  display:flex;
+  flex-direction: column;
+}
+
+.flexsell{
+      align-items: center;
+    color: #222;
+    display: flex;
+    margin-bottom: 25px;
+    margin-left: -4px;
+    margin-top: -4px;
+    padding: 4px;
+}
+
+.sec{
+  align-items: center;
+  display: flex;
+}
+
+.pr{
+padding: 15px 20px;
+align-items: center;
+}
+
+.daw{
+  align-items: center;
+    color: #222;
+    display: flex;
+    margin-bottom: 25px;
+    margin-left: -4px;
+    margin-top: -4px;
+    padding: 4px;
+}
+
+  .A{
+  }
+  .B{
+   
+  }
+
+  /* สไตล์ปุ่ม */
+    .buttonsell-A {
+      display: inline-flex; /* ใช้ flex เพื่อจัดตำแหน่ง */
+      align-items: center;  /* จัดตำแหน่งแนวตั้ง */
+      justify-content: center; /* จัดตำแหน่งแนวนอน */
+     /* border-radius: 8px;  มุมโค้ง */
+      font-size: 16px; /* ขนาดตัวอักษร */
+      cursor: pointer; /* แสดงปุ่มให้สามารถคลิกได้ */
+      transition: background-color 0.3s, transform 0.3s; /* เอฟเฟกต์เมื่อ hover */
+      padding: 14px 50px; /* เว้นระยะภายในปุ่ม */
+
+      border: none; /* ลบเส้นขอบ */
+
+      color: #ee4d2d; /* สีข้อความ */
+
+      border: 1px solid #ee4d2d;
+      font-size: .875rem;
+                background-color: rgba(255,87,34,.1); /* สีพื้นหลัง */
+
+    }
+
+    .buttonsell-B {
+      display: inline-flex; /* ใช้ flex เพื่อจัดตำแหน่ง */
+      align-items: center;  /* จัดตำแหน่งแนวตั้ง */
+      justify-content: center; /* จัดตำแหน่งแนวนอน */
+     /* border-radius: 8px;  มุมโค้ง */
+      font-size: 16px; /* ขนาดตัวอักษร */
+      cursor: pointer; /* แสดงปุ่มให้สามารถคลิกได้ */
+      transition: background-color 0.3s, transform 0.3s; /* เอฟเฟกต์เมื่อ hover */
+      padding: 14px 50px; /* เว้นระยะภายในปุ่ม */
+
+      border: none; /* ลบเส้นขอบ */
+
+      color: white; /* สีข้อความ */
+    background-color:#EE4D2D;
+
+      border: 1px solid #ee4d2d;
+      font-size: .875rem;
+    }
+
+    /* เอฟเฟกต์เมื่อ hover */
+    .buttonsell:hover {
+      background-color: #45a049; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+      transform: scale(1.05); /* ขยายขนาดเล็กน้อยเมื่อ hover */
+    }
+
+    /* การจัดตำแหน่งภาพ */
+    .buttonsell img {
+      width: 20px; /* ขนาดภาพ */
+      height: 20px; /* ขนาดภาพ */
+      margin-right: 8px; /* เว้นระยะระหว่างภาพและข้อความ */
+    }
+
+
+.blac {
+  /*background-image: url('/icon/fw.jpg');  เส้นทางที่ถูกต้อง 
+  height: 20px;
+  margin-right: 10px;
+  width: 20px;*/
+}
+
+
+     .button-cate {
+      align-items: center;
+    background: #fff;
+      border: 1px solid rgba(0, 0, 0, .09);
+          cursor: pointer;
+      display: inline-flex; /* ใช้ flex เพื่อจัดตำแหน่ง */
+      align-items: center;  /* จัดตำแหน่งแนวตั้ง */
+      justify-content: center; /* จัดตำแหน่งแนวนอน */
+      margin: 8px 8px 0 0;
+      padding-left: 2.5rem;
+      border: 1px solid rgba(0, 0, 0, .09);
+      min-height: 2.5rem;
+    min-width: 5rem;
+    overflow: visible;
+    padding: .5rem;
+    position: relative;
+    text-align: left;
+    word-break: break-word;
+      /*font: inherit;*/
+
+    }
+
+    .cate img{
+height: 20px;
+    margin-right: 10px;
+    width: 20px;
+    }
+
+
+    .counter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .button {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  border: 1px solid rgba(0,0,0,.09);
+  border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  color: rgba(0,0,0,.8);
+  cursor: pointer;
+  display: flex;
+  font-size: .875rem;
+  font-weight: 300;
+  height: 32px;
+  justify-content: center;
+  letter-spacing: 0;
+  line-height: 1;
+  outline: none;
+  transition: background-color .1s cubic-bezier(.4,0,.6,1);
+  width: 32px;
+}
+        .count {
+            width: 50px;
+            text-align: center;
+        }
+
+        .flex{
+          display:flex;
+        }
+
+
+        .counter-container {
+  display: flex;                  /* ใช้ flexbox */
+  align-items: center;            /* จัดตำแหน่งในแนวตั้งให้ตรงกลาง */
+  justify-content: center;        /* จัดตำแหน่งในแนวนอนให้ตรงกลาง */
+ /*  background-color: #f0f0f0;      พื้นหลังที่อ่อน */
+  border-radius: 2px;             /* มุมโค้งมน */
+  /* padding: 5px 15px;              เว้นระยะระหว่างปุ่มและตัวเลข */
+ /*  box-shadow: 0 2px 5px rgba(0,0,0,0.1); เงานิดๆ เพื่อให้ดูเด่น */
+border: 1px solid rgba(0,0,0,.09);         /* กรอบเส้นสีเทาอ่อน */
+}
+
+/* สีเมื่อ hover ที่ปุ่ม */
+button:hover {
+  background-color: #0056b3;      /* สีพื้นหลังเมื่อ hover */
+}
+
+/* สไตล์สำหรับตัวเลข */
+.counter-value {
+  font-size: 24px;                /* ขนาดตัวอักษรของตัวเลข */
+  margin: 0 10px;                 /* ระยะห่างระหว่างตัวเลขกับปุ่ม */
+  font-weight: bold;              /* ทำให้ตัวเลขหนา */
+}
+
+
+.UBG7wZ {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 5px;
+    width: 20%;
+}
+
+.jA1mTx{
+  position: relative;
+}
+
+.YM40Nc {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    height:100%;
+}

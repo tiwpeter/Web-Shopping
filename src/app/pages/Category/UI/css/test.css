@@ -1,0 +1,49 @@
+.list-view .test {
+    display: flex;
+}
+
+.list-view .product-meta{
+flex-direction: column;
+}
+
+
+.list-view .price-discount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /*position: absolute;  ใช้ position absolute */
+    top: 0;
+    right: 0;
+    margin-top: -15px;
+}
+
+.imgsecond img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.ws{
+    width: 500px;
+}
+
+
+
+
+
+.location{
+    font-family: Roboto-Regular;
+    color: #757575;
+    font-size: 12px;
+}
+.rating{
+    font-family: Roboto-Regular;
+color: #757575;
+font-size: 12px;
+}
+
+.sold{
+    float: left;
+    color: #212121;
+    font-family: Roboto-Regular;
+}

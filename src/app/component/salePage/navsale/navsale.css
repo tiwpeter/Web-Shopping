@@ -1,0 +1,37 @@
+.N {
+  display: flex;              /* ใช้ flexbox */
+  flex-direction: column;     /* จัดเรียงในแนวตั้ง (คอลัมน์) */
+  align-items: center;        /* จัดให้อยู่ตรงกลางในแนวนอน */
+}
+
+.icon-Laz {
+    width: 120px;
+    height: 18px;
+    margin-top: 15px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.icon-LazF {
+    display: flex;
+    background-color: #fff;
+    width: 1200px; /* กำหนดความกว้างของรูปภาพ */
+    height: 60px; /* ให้ความสูงปรับตามอัตราส่วนของรูปภาพ */
+    text-align: center;
+}
+
+
+
+.box-icon {
+    width: 296px;
+    height: 30px;
+}
+
+span h5 {
+    color: black;
+}
+
+.box-icon h5 {
+    margin-top: 5px;
+}

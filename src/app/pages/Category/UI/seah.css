@@ -1,0 +1,94 @@
+.q9tZB {
+    float: left;
+    display: block;
+    width: 70px;
+    height: 30px;
+    padding: 0 7px;
+    text-align: left;
+    color: #404040;
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+    outline: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 #ececec;
+    transition: all .3s linear;
+    min-width: auto;
+    -moz-appearance: textfield;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"],
+.search input[type="number"] {
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+
+    border-radius: 4px;
+    width: 70px;
+    height: 30px;
+   /* padding: 8px;*/
+
+}
+
+.search button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search button:hover {
+    background-color: #0056b3;
+}
+
+
+/*********************/
+.search .play-icon {
+    padding: 12px 13px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    /* เพิ่ม background-image ใน CSS เพื่อใส่ไอคอนแทน 
+    background-image: url('play.png');;*/
+    background-size: cover; /* ปรับขนาดไอคอนให้เต็มขนาดปุ่ม */
+    background-repeat: no-repeat; /* ไม่ให้ไอคอนซ้ำซ้อนกัน */
+    text-indent: -9999px; /* ซ่อนข้อความที่แสดงในปุ่ม */
+
+
+    background-size: 24px;    /* ปรับขนาดไอคอนเป็น 20px */
+
+}
+
+.search .play-icon:hover {
+    background-color: #0056b3;
+}
+
+/*
+}
+.search .play-icon {
+    padding: 12px 13px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    background-image: url(play.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    background-size: 24px;
+}
+
+*/

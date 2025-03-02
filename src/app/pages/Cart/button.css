@@ -1,0 +1,59 @@
+.cartSummary {
+  flex: 0; /* ไม่ให้ขยายตามขนาด */
+  width: 300px; /* กำหนดความกว้างคงที่ */
+  min-width: 280px; /* กำหนดความกว้างต่ำสุด */
+  max-width: 350px; /* กำหนดความกว้างสูงสุด */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 250px; /* กำหนดความสูง */
+  gap:15px;
+}
+
+.cartButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-top: auto; /* ใช้ margin-top:auto เพื่อให้ปุ่มไปอยู่ด้านล่างสุด */
+}
+
+.clearCartButton,
+.checkoutButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.clearCartButton {
+  background-color: #f44336;
+}
+
+.checkoutButton {
+  background-color: #4caf50;
+}
+
+.clearCartButton:hover {
+  background-color: #e53935;
+}
+
+.checkoutButton:hover {
+  background-color: #45a049;
+}
+.cartSummaryAmountRow {
+  display: flex;
+  justify-content: space-between; /* ชื่ออยู่ซ้ายสุด ราคาอยู่ขวาสุด */
+  color: #333;
+ 
+}
+
+.amountLabel1{
+   color: #888;
+}

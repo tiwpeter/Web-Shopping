@@ -1,0 +1,102 @@
+.star-rating {
+  display: inline-flex;
+  justify-content: center; /* จัดดาวให้อยู่กลาง */
+  align-items: center; /* จัดตำแหน่งดาวในแนวตั้ง */
+    margin-top:-5px;
+
+}
+        .star {
+            color: gold;  /*สีของดาว */
+          /*  margin: 0 5px;  เว้นระยะระหว่างดาว */
+            cursor: pointer; /* เพิ่มเคอร์เซอร์เป็นมือ */
+        }
+
+.star {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 13px !important;
+  width: 13px !important;
+        }
+
+
+
+
+
+
+
+
+
+
+
+.undeline{
+border-bottom: 1px solid #555;
+    border-bottom-color: rgb(85, 85, 85);
+        }
+        .color_undeline{
+border-bottom-color: #222 !important;
+  color: #222 !important;
+        }
+        .font_undeline{
+  font-size: 1rem;
+  margin-right: 5px;
+  padding-bottom: 1px;
+        }
+
+        .button_under{
+            height:24px
+        }
+        /*
+        .button_under {
+    border: none;          /* ลบกรอบของปุ่ม */
+   
+/* background-color: transparent;   ลบสีพื้นหลัง */
+  /*  color: inherit;         สีตัวอักษรให้รับจากค่าเริ่มต้น หรือจากองค์ประกอบแม่ */
+  /*  padding: 0;            /* ลบการเว้นระยะขอบของปุ่ม (ถ้ามี) */
+ /*   font: inherit;         /* ใช้ฟอนต์ที่เหมือนกับฟอนต์ของเอกสารหรือองค์ประกอบแม่ */
+ /*  cursor: pointer;      /* เพิ่มเคอร์เซอร์เป็นมือ */
+  /*  outline: none;         /* ลบเส้นขอบเมื่อเลือกปุ่ม 
+}*/
+
+.button_under {
+  display: flex;          /* ใช้ flexbox */
+  justify-content: center; /* จัดตำแหน่งทั้งข้อความและดาวในแนวนอน */
+  align-items: center;     /* จัดตำแหน่งทั้งข้อความและดาวในแนวตั้ง */
+  border: none;           /* ลบกรอบ */
+  background-color: transparent; /* ลบสีพื้นหลัง */
+  padding: 10px;           /* เพิ่มการเว้นระยะภายในปุ่ม */
+  cursor: pointer;        /* เพิ่มเคอร์เซอร์เป็นมือ */
+  outline: none;           /* ลบเส้นขอบที่เกิดจากการคลิก */
+}
+
+.rate{
+      margin-top: .625rem;
+    min-height: 1.55rem;
+    position: relative;
+    display:flex;
+}
+
+
+
+
+/* ปรับปุ่ม */
+.custom-button {
+  border: none;               /* ลบกรอบของปุ่ม */
+  background-color: transparent; /* ลบสีพื้นหลัง */
+  padding: 5px 10px;          /* เพิ่มการเว้นระยะภายในปุ่ม */
+  font-size: 16px;            /* ขนาดฟอนต์ */
+  color: #222;                /* สีของข้อความ */
+  cursor: pointer;           /* เปลี่ยนเคอร์เซอร์เป็นมือ */
+  outline: none;              /* ลบเส้นขอบเมื่อเลือกปุ่ม */
+  border-left: 1px solid rgba(0, 0, 0, 0.14); /* เส้นขีดคั่นซ้ายสุด */
+}
+
+/* เพิ่มเส้นขีดคั่นทางซ้ายสุด */
+.custom-button::before {
+  content: '';                /* เนื้อหาว่าง */
+  position: absolute;         /* กำหนดตำแหน่ง */
+  left: 0;                    /* วางขีดคั่นที่ด้านซ้ายสุด */
+  top: 0;                     /* เริ่มจากด้านบนสุด */
+  width: 2px;                 /* ความหนาของเส้น */
+  height: 100%;               /* ความยาวของเส้นที่เต็มความสูงของปุ่ม */
+ /* background-color: #222;      สีของเส้น */
+}

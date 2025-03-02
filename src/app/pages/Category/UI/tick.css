@@ -1,0 +1,31 @@
+.box {
+  width: 18px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: background-color 0.3s ease;
+  text-align: center; /* จัดให้เนื้อหาอยู่ตรงกลางภายใน .box */
+}
+
+.box.clicked {
+  background-color: #ffa366; /* สีส้มอ่อนเมื่อคลิก */
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* เพิ่มช่องว่างระหว่างรายการ */
+}
+
+.box-container span {
+  margin-left: 10px; /* ช่องว่างระหว่างเครื่องหมายติ๊กและชื่อหมวดหมู่ */
+}
+
+.fas.fa-check {
+  font-size: 18px;
+  color: #ee4d2d; /* กำหนดสีส้มแดงสำหรับเครื่องหมายติ๊ก */
+}

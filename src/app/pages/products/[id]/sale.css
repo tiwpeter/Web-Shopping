@@ -1,0 +1,13 @@
+.sla{
+  align-items: center;
+  background-color: #feeeea;
+  border-radius: 2px;
+  color: #ee4d2d;
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 700;
+  height: 18px;
+  justify-content: center;
+  margin-left: 10px;
+  padding: 0 4px;
+}

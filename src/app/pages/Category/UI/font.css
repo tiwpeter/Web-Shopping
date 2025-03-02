@@ -1,0 +1,74 @@
+.fmaly{
+    color: #f57224;
+    font-family: Roboto-Medium;
+    font-size: 15px;
+}
+
+
+h4 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+h4 {
+    font-size: 2em;
+    margin: .67em 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: 500;
+}
+
+.boxing span {
+    color: gray;
+}
+.gray {
+    color: gray;
+}
+
+
+.viewmore{
+    font-family: Roboto-Medium;
+    margin-top: 5px;
+    color: #1a9cb7;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.product-item h3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* จำนวนบรรทัดที่ต้องการให้แสดง */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* จำเป็นในกรณีที่ข้อความมีเครื่องหมาย new line */
+    margin: 0;
+}
+
+.product-header h5{
+        display: -webkit-box;
+    -webkit-line-clamp: 2; /* จำนวนบรรทัดที่ต้องการให้แสดง */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; /* จำเป็นในกรณีที่ข้อความมีเครื่องหมาย new line */
+    margin: 0;
+}
+
+/*cs*/
+
+
+
+.dsss h1{
+    margin-top: 0;
+    margin-bottom: 0.0em;
+    font-weight: 500;
+}  

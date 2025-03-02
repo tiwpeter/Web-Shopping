@@ -1,0 +1,121 @@
+.detail-container {
+  display: flex;                    /* ใช้ Flexbox */
+  justify-content: center;          /* จัดกลางในแนวนอน */
+  align-items: center;              /* จัดกลางในแนวตั้ง */
+  gap: 20px;                        /* เพิ่มระยะห่างระหว่างกล่อง */
+  background-color:#FFFFFF;
+}
+
+.box {
+  height: 700px;                    /* กำหนดความสูง */
+  background-color: #FFFFFF;      /* สีพื้นหลังของ box */
+  display: flex;                    /* ใช้ Flexbox ใน box */
+}
+
+.box-small {
+    display: flex;                    /* ใช้ Flexbox ใน box */          /* จัดข้อความกลางใน box */
+  flex-direction: column;           /* เรียงกันในแนวตั้ง */
+  width: 480px;                     /* กำหนดความกว้างของกล่องแรก */
+  padding:15px;
+}
+
+
+.product-image {
+  width: 450px;                      /* ให้ภาพมีความกว้าง 100% ของกล่อง */
+  height:450px;
+}
+
+.product-image2 {
+  width: 82px;                      /* ให้ภาพมีความกว้าง 82px ของกล่อง */
+  height:82px;
+}
+
+
+.boximage2{
+    margin: 5px -5px;
+    position: relative;
+    height:90px;
+    overflow: hidden;
+}
+
+.container-detail{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  background-color:#EFF0F5;
+}
+.fwlok{
+  margin-top:15px;
+  display:flex;
+      align-items: center;
+
+}
+
+.share{
+  border-right: 1px solid rgba(0,0,0,.09);
+  padding: 0 30px;
+  align-items: center;
+  display: flex;
+}
+
+.favo{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  display:flex;
+}
+
+.wga {
+  width: 40px;                /* ขนาดของปุ่ม */
+  height: 40px;               /* ขนาดของปุ่ม */
+  background-image: url('https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/12f585f9c56d4f30.png'); /* ใช้ภาพ sprite */
+background-size: 100%;}
+
+/* กำหนดตำแหน่งของไอคอนที่จะแสดงในปุ่ม */
+.icon {
+ background-position: 0 -100%;
+
+}
+
+.icon2{
+  background-position: 0 0;  /* เลือกไอคอนที่ 2 จาก 4 */
+}
+
+.icon3{
+  background-position: 0 -300%;  /* เลือกไอคอนที่ 2 จาก 4 */
+}
+
+.icon4{
+  background-position: 0 -400%;  /* เลือกไอคอนที่ 2 จาก 4 */
+}
+
+.Vo8Ebs {
+  border: 0;
+  height: 25px;
+  margin-left: 5px;
+  outline: 0;
+   /*   overflow: visible;*/
+  padding: 0;
+  position: relative;
+  width: 25px;
+}
+
+.rhG6k7 {
+  color: #222;
+  font-size: 16px;
+}
+
+.w2JMKY{
+    background-color: transparent;
+  border: 0;
+  display: flex;
+  outline: 0;
+   /*   overflow: visible;*/
+  position: relative;
+}
+
+.hea{
+      width: 24px;
+    height: 20px;
+    margin-right: 10px;
+}

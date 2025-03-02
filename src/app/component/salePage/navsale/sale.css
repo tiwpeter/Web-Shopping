@@ -1,0 +1,136 @@
+.sle{
+}
+
+.sale{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px; /* เพิ่มระยะห่างด้านล่างของ .sale */
+    background-color: #fff;
+    width: 1200px;
+    height:60px;
+    
+}
+
+
+
+
+.o{
+    right:0px;
+    display: flex;
+    text-align: center; /* จัดข้อความอยู่กึ่งกลางในแนวนอน */
+    background-color: #fff;
+
+
+}
+
+.o p {
+   /* margin-right: 190px; /* ปรับระยะห่างขวาของข้อความ */
+    color: black;
+
+    text-align: center; /* จัดข้อความอยู่กึ่งกลางในแนวนอน */
+    margin-left: -50px; /* ให้ปุ่มอยู่ด้านขวา */
+    margin-top: 25px;
+    /*margin-right: 30px; /* ปรับระยะห่างขวา */
+
+
+
+
+}
+
+.o button {
+    margin-left: 358px; /* ให้ปุ่มอยู่ด้านขวา */
+}
+
+.sale button {
+    width: 200px; /* กำหนดความกว้างของปุ่ม */
+    height: 40px; /* กำหนดความสูงของปุ่ม */
+    font-size: 16px; /* กำหนดขนาดตัวอักษรของปุ่ม */
+
+    /*45px*/
+}
+
+.o1{
+    width: 188.3px;
+    height: 60px; /* กำหนดความสูงของปุ่ม */
+    
+
+}
+
+.o2{
+    margin-left: 88px; /* ให้ปุ่มอยู่ด้านขวา */
+
+}
+
+
+.tag-sale {
+    background-color: #D3232A;
+    padding: 13px 13px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    margin-left: 4px;
+
+    width:45px;
+    height:100%;
+    margin-top: 10px;
+
+}
+
+.tag-sale  {
+    color: white; /* ปรับสีของข้อความเป็น white */
+    font-size: 15px; /* ปรับขนาดตัวอักษรของข้อความใน tag span ที่มีคลาส tag-sale เป็น 18px */
+
+}
+
+.up{
+    margin: 0px,0px,0px,65px;
+    display:flex;
+
+}
+
+.m{
+    color: black;
+    font-size: 20px; /* กำหนดขนาดตัวอักษรของปุ่ม */
+    margin-top: 20px;
+    margin-left: 4px; /* ให้ปุ่มอยู่ด้านขวา */
+
+}
+
+.o1 p {
+    color:#f57224;
+    font-weight: bold; /* กำหนดให้ข้อความหนา */
+
+}
+
+.buton-Shop {
+    
+    color: #f57224; /* กำหนดสีข้อความเป็นสีขาว */
+    border: 2px solid #f57224; /* กำหนดเส้นขอบขนาด 2 พิกเซล และสีดำ */
+    font-weight: bold; /* กำหนดให้ข้อความหนา */
+
+}
+
+.original-price {
+    text-decoration: line-through; /* สร้างขีดทับเทียบ */
+    color: #999; /* สีเทาหรือสีเทาอ่อนเพื่อเน้นสินค้าที่ลดราคา */
+}
+
+.discount {
+    color: #212121;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+
+.span-detail {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* จำนวนบรรทัดที่ต้องการให้แสดง */
+    overflow: hidden;
+}
+
+.buton-Shop {
+    margin-top: 11px; /* ปรับตำแหน่งด้านบนของปุ่ม */
+    margin-right:10px;
+
+}

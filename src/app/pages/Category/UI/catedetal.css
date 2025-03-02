@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* สำหรับการจัดให้อยู่กึ่งกลางในแนวตั้ง */
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .main-content {
+    width: 1000px; /* ขนาดของเนื้อหาหลัก */
+    height: 5300px;
+    padding: 20px;
+   /* margin-left: 20px;  ระยะห่างด้านซ้ายของเนื้อหาหลัก */
+    background-color: #fff;
+  }
+  
+    .grid-view .product-item{
+        display: flex;
+    }
+
+    .list-view .product-item {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        margin: 10px 0;
+        height:283px;
+    }
+    .list-view .list1 {
+        display: flex;
+    }
+
+    .list-view .list {
+        margin-left : 15px;
+    }
+    .grid-view .list1 {
+        display: block; /* or inline-block if needed */
+    }
+
+    .list-view .price-container{
+            width: 560px;
+        }
+
+    .list-view .price-container {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        text-align: right;
+        margin-left: 56px;
+    }
+    .list-view .catetitle {
+        width: 448px;
+        height: 54px;
+    }
+    .sold{
+        display: flex;
+        font-size: 13px;
+    }
+    
+    .list-view .price-cate{
+        margin-top:-30px;
+    }
+
+
+    .price-cate{
+        text-align: left;
+    }
+
+    .dddvs{
+                text-align: left;
+
+    }
+
+    .wenbo{
+        width: 1188px;
+        height: 48px;
+        border-bottom: 1px solid #EFF0F5;
+        margin: 0 auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+
+    .breadcrumb_item_anchor {
+        display: inline-block;
+        vertical-align: middle;
+        color: #1a9cb7;
+        padding: 0 4px;
+        font-size: 14px;
+        font-family: Roboto-Regular, Helvetica, Arial, sans-serif;
+        max-width: 200px;
+        white-space: nowrap;
+        line-height: 16px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+
+    .breadcrumb_item_text {
+            vertical-align: middle;
+            padding: 0;
+            margin: 0;
+            line-height: 100%;
+            display: inline-block;
+            font-weight: 300;
+            }
+            .breadcrumb_item {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 13px;
+  font-weight: 300;
+  height: 48px;
+}        
+
+.breadcrumb_right_arrow {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACKUExURUxpcYGBgYGBgYWFhYCAgICAgICAgIKCgv///4GBgZWVlYyMjIGBgYCAgIKCgoGBgYGBgaqqqoODg7+/v4GBgZKSko6OjoGBgYWFhYGBgYSEhIGBgZmZmYCAgIGBgYGBgYCAgICAgIGBgYCAgICAgIiIiICAgIeHh4GBgYSEhIODg4GBgYGBgYCAgPLijmAAAAAtdFJOUwCS7jCDi/E1AbYMFJrrK9ToAycEugcJtBfYG64Fp+S+vb+god0e4SLcHyPgwPJLUkAAAAB6SURBVDjLY2AYYoCdkwu/AgVdHTG8Crj5dUVE8aqQkNQVl8GrQkpDV1oYrwpVbV1ZQbwq1OV0lTnwqhAS0OXBr4KPV5cRf3AwM+myEghRNl0WihQQsoKQIwl5U0tOVwmfvKYa/qCWUsEfWYSim2CCkddVFKMs0Q5aAABM4wlSQJ87yAAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+.breadcrumb_item_anchor {
+    text-decoration: none; /* เอาการตกแต่งขีดล่างออก */
+}
+
+
+.grid-view .ab {
+        display: flex;
+    }
+
+.reviews {
+    font-family: Roboto-Regular;
+    color: #757575;
+    font-size: 12px;
+}
+
+._17mcb{
+    
+    margin: 15px 0 -10px;
+    border-top: 1px solid #f1f1f1;
+}

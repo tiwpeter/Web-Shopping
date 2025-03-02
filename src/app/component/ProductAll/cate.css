@@ -1,0 +1,141 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.product-item{
+height: 188px;
+  margin-bottom: 4px;
+  width: 188px;
+  }
+
+  .product-image {
+  width: 100%; /* Make image take the full width of the container */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area without distorting */
+  border-radius: 10px; /* Optional: round the corners of the image */
+}
+
+
+
+
+.text-duct{
+    margin: 4px 8px 0;
+}
+
+.titile-duct{
+    font-size: 14px;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+/*line block */
+.two-line-clamp{
+-webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.two-line-clamp{
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+.product-item{
+
+font-family: NotoSans-Regular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,Helvetica,Tahoma,Arial,PingFang SC,Microsoft YaHei,sans-serif !important;
+}
+
+.price-flex1{
+    color: #f57224;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  height: 22px;
+  letter-spacing: -.56px;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+
+.origin-price{
+display: flex;
+  flex-direction: row;
+  line-height: 12px;
+  }
+
+  .origin-price-main{
+    color: #9e9e9e;
+  display: flex;
+  flex-direction: row;
+  text-decoration: line-through;
+}
+
+  .origin-price-main{
+    font-size: 12px;
+  }
+
+.discout
+  {
+  color: #212121;
+  font-size: 12px;
+  margin-left: 4px;
+  }
+
+  /*use later
+  .fs-card-sold {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  height: 16px;
+  margin-bottom: 7px;
+}*/
+
+
+.box-procduct{
+  height: 290px;
+  margin-right: 12px;
+  width: 188px;
+  
+    transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+  cursor: pointer; /* Change the cursor to pointer when hovering */
+
+}
+.box-procduct:hover {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25); /* Box shadow on hover */
+
+}
+.common-img {
+  display: inline-flex;
+}
+
+.Addhigth{
+  height: 45vw;
+}
+
+.load-more{
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 9px;
+  padding-top: 24px;
+}
+
+.load-button{
+  border: 1px solid #1a9cb8;
+  color: #1a9cb8;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 387px;
+}
+
+
+.duct-link{
+  height:600px;
+  display: block;
+  text-decoration: none;
+  height: 600px;
+}

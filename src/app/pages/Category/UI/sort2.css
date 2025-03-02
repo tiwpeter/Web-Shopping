@@ -1,0 +1,66 @@
+.view-options button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 26px; /* ปรับขนาดไอคอนตามที่คุณต้องการ */
+
+}
+
+.view-options button i {
+    color: gray; /* สีเทาเป็นค่าเริ่มต้น */
+}
+
+.view-options button.clicked i {
+    color: black; /* สีดำเมื่อคลิก */
+}
+
+.view-options {
+    display:flex;
+
+}
+
+.re{
+    margin-top:-8px;
+    display:flex;
+
+}
+/*     ------------------------------              */
+.sort-by, .view-options {
+    margin-bottom: 20px;
+}
+
+.mk {
+    border-top: 1px solid #000; /* Change color and width as needed */
+    border-bottom: 1px solid #000; /* Change color and width as needed */
+}
+
+/*------------------------------------------------*/
+/* CSS สำหรับตกแต่ง Select */
+.ant-select-selection-item {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 11px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 210px; /* ปรับขนาดตามที่ต้องการ */
+    height : 40px;
+    outline: none;
+}
+
+/* CSS สำหรับสร้างเอฟเฟกต์เมื่อโฟกัส */
+.ant-select-selection-item:focus {
+    border-color: #007bff; /* เปลี่ยนสีของเส้นขอบเมื่อโฟกัส */
+}
+
+/* CSS สำหรับสร้างเอฟเฟกต์เมื่อโฮเวอร์ */
+.ant-select-selection-item:hover {
+    background-color: #e9ecef; /* เปลี่ยนสีพื้นหลังเมื่อโฮเวอร์ */
+}
+
+.flex{
+    display:flex;
+}

@@ -1,0 +1,35 @@
+.starraing img {
+    width: 15px; /* ปรับขนาดความกว้างของรูปเป็น 100px */
+    height: 15px; /* ให้ความสูงปรับอัตโนมัติเพื่อรักษาอัตราส่วน */
+
+}
+
+.starraing  {
+    gap: 10px; /* กำหนดความระยะห่างระหว่างรูปภาพ */
+
+
+}
+
+.star{
+    width: 15px; /* ปรับขนาดความกว้างของรูปเป็น 100px */
+    height: 15px; /* ให้ความสูงปรับอัตโนมัติเพื่อรักษาอัตราส่วน */
+}
+
+.ratingflex{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+
+.rating {
+          display: flex;
+          flex-direction: column;
+          /*align-items: center;*/
+        }
+
+        .row {
+          display: flex;
+        /*  justify-content: center;
+          margin-bottom: 10px;*/
+        }

@@ -1,0 +1,67 @@
+.LLL{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    overflow-wrap: break-word;
+}
+
+
+.secod{
+  color: #767676;
+  font-size: .875rem;
+  text-transform: capitalize;
+}
+
+.secod{
+  margin-right: 5px;
+  padding: 4px 0;
+}
+
+
+.secod_price{
+  color: #929292;
+  font-size: 16px;
+  margin-right: 10px;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.wssa{
+    margin-left: 0.625rem;
+  margin-right: 0px;
+}
+
+.font_comon{
+  align-items: center;
+  color: #757575;
+  flex-shrink: 0;
+  font-size: inherit;
+  font-weight: 400;
+  margin: 0;
+  text-transform: capitalize;
+  width: 110px;
+}
+
+.button{
+  font: inherit;
+}
+
+
+
+.wfwf{
+  background: rgba(0,0,0,.02);
+  color: rgba(0,0,0,.87);
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 0;
+  padding: .875rem;
+  text-transform: capitalize;
+}
+
+
+
+body{
+  color: rgba(0,0,0,.8);
+  font-family: Helvetica Neue,Helvetica,Arial,文泉驛正黑,WenQuanYi Zen Hei,Hiragino Sans GB,儷黑 Pro,LiHei Pro,Heiti TC,微軟正黑體,Microsoft JhengHei UI,Microsoft JhengHei,sans-serif;
+  line-height: 1.2;
+}

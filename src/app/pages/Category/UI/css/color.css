@@ -1,0 +1,48 @@
+.store {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.product-header {
+    display: flex; /* ทำให้เป็น Flex Container */
+    align-items: center; /* จัดการให้สมาชิกภายในตรงกลางในแนวตั้ง */
+    gap: 10px;
+}
+
+.discount {
+    font-family: Roboto-Regular;
+    color: #757575;
+    font-size: 12px;
+}
+
+.grid-view .price-discount {
+    align-items: center; /* จัดการให้สมาชิกภายในตรงกลางในแนวตั้ง */
+
+}
+
+.grid-view  .product-meta {
+    margin-top: 5px; /* เพิ่มระยะห่างด้านบนของ .product-meta */
+}
+
+
+.ch{
+    align-items: center; /* จัดการให้สมาชิกภายในตรงกลางในแนวตั้ง */
+
+}
+
+.dws{
+    display: flex;
+    align-items: center; /* จัดการให้สมาชิกภายในตรงกลางในแนวตั้ง */
+
+}
+
+.price{
+
+    color: #e67e22;
+    font-size: 20px;
+    font-weight: bold;
+}
+
