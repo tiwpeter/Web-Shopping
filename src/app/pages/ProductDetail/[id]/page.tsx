@@ -6,6 +6,7 @@ import "./detail.css";
 import { useCart } from "../../../CartContext"; //เก็บข้อมูลใส่ ตระกร้า
 
 export default function ProductDetail() {
+  const [isHovered, setIsHovered] = useState(false); // สถานะ hover
   const { id } = useParams(); // อ่านค่าจาก URL สำหรับ product id
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -15,6 +16,14 @@ export default function ProductDetail() {
   const [selectedOptionName, setSelectedOptionName] = useState(null); //สำหรับเก็บ option ที่เลือก
   const [selectedThumbnail, setSelectedThumbnail] = useState(null); //เพิ่มกรอบสีรอบรูปภาพเมื่อคลิกไ
   const { addToCart } = useCart();
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   // เพิ่ม state สำหรับจัดเก็บตัวเลือกที่เลือก
   const [selectedOption, setSelectedOption] = useState({
@@ -277,6 +286,8 @@ export default function ProductDetail() {
                                         opt.option_name
                                       )
                                     } // ส่งราคาที่เลือกและ images ไป// เมื่อคลิกจะอัพเดตราคาที่เลือก
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}
                                   >
                                     <div className="cate">
                                       {opt.image_urls &&
