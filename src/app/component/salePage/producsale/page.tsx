@@ -12,7 +12,7 @@ const ProductSale = ({ products }) => {
             ) => (
               <Link
                 key={product.id}
-                href={`/ProductDetail/${product.id}`} // ✅ แก้ไข path ให้ถูกต้อง
+                href={`/pages/ProductDetail/${product.id}`} // ✅ แก้ไข path ให้ถูกต้อง
                 className="box-procduct common-img"
                 style={{ cursor: "pointer" }}
               >
