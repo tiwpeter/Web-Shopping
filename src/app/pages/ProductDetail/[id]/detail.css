@@ -314,11 +314,15 @@ height: 20px;
 border: 1px solid rgba(0,0,0,.09);         /* กรอบเส้นสีเทาอ่อน */
 }
 
-/* สีเมื่อ hover ที่ปุ่ม */
-button:hover {
-    border: 1px solid #ff6600; /* สีกรอบเมื่อเลือก */
+
+
+.button-cate:hover,
+.button-cate.hover-active {
+     border: 1px solid #ff6600; /* สีกรอบเมื่อเลือก */
   border-radius: 5px; /* ทำให้มุมมน */     /* สีพื้นหลังเมื่อ hover */
 }
+
+
 
 /* สไตล์สำหรับตัวเลข */
 .counter-value {
