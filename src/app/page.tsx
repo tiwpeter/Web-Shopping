@@ -10,8 +10,9 @@ export default function Home() {
   return (
     <div>
       <Toneimgmain />
-
+      <Salepage />
       <Categories />
+      <Product />
     </div>
   );
 }

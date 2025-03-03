@@ -21,13 +21,13 @@
 
 
 .product-image {
-  width: 450px;                      /* ให้ภาพมีความกว้าง 100% ของกล่อง */
-  height:450px;
+  width: 330px;                      /* ให้ภาพมีความกว้าง 100% ของกล่อง */
+  height:330px;
 }
 
 .product-image2 {
-  width: 82px;                      /* ให้ภาพมีความกว้าง 82px ของกล่อง */
-  height:82px;
+  width: 50px;                      /* ให้ภาพมีความกว้าง 50px ของกล่อง */
+  height:50px;
 }
 
 
@@ -538,7 +538,8 @@ border-bottom-color: #222 !important;
 }
 
 .car{
-  justify-self: center;
+  display:flex;
+align-items: center;
   -ms-grid-column-align: center;
   grid-column: 1;
   -ms-grid-column: 1;

@@ -3,8 +3,8 @@ import Link from "next/link"; // ✅ ใช้ next/link
 
 const ProductSale = ({ products }) => {
   return (
-    <div className="w-full bg-blue-500 h-auto flex justify-center items-center">
-      <div className="bg-red-500 w-[1200px] h-full">
+    <div className="w-full  h-auto flex justify-center items-center">
+      <div className=" w-[1200px] h-full">
         <div className="discounted-products flex flex-wrap">
           {products.map((product) => (
             <Link
@@ -16,21 +16,23 @@ const ProductSale = ({ products }) => {
               <div className="product-item">
                 <div style={{ width: "189px", height: "189px" }}>
                   <img
-                    src="https://s.isanook.com/ca/0/ui/279/1396205/s__152616986_1562561122.jpg"
+                    src={product.image_urls[1]}
                     alt={product.name}
                     className="product-image"
                   />
                 </div>
                 <div className="text-duct">
                   <div className="titile-duct two-line-clamp">
-                    <p>
-                      QFDI กระเป๋าสะพายหลัง กันน้ำขนาดใหญ่ไนลอน
-                      กระเป๋าเป้กีฬาแฟชั่น สไตล์เกาหลี ใส่ของได้เยอะ 4สี
-                      กระเป๋าเป้ กระเป๋านักรียน กระเป๋าสะพายหลัง
-                    </p>
+                    <p>{product.name}</p>
                   </div>
                   <div className="price-flex1">
-                    <div className="price">฿375</div>
+                    <div className="price">
+                      ฿
+                      {(
+                        product.price -
+                        (product.price * product.sale_percent) / 100
+                      ).toFixed(2)}
+                    </div>
                   </div>
                   <div className="origin-price">
                     <div className="origin-price-main">

@@ -197,12 +197,18 @@ export default function ProductDetail() {
                     <div>
                       {/* แสดงราคาที่เลือก (หากไม่มีการเลือก, จะแสดงช่วงราคาตั้งต้น) */}
                       <h1 style={{ color: "#f57224" }}>
-                        ฿{selectedPrice || 7}{" "}
+                        ฿
+                        {(
+                          (selectedPrice || product.price) *
+                          (1 - product.sale_percent / 100)
+                        ).toFixed(2)}
                         {/* ถ้ามีการเลือก option ให้แสดงราคาที่เลือก ถ้าไม่ให้แสดงราคาปกติ */}
                       </h1>
                     </div>
-                    <div className="wssa secod_price">฿15 - ฿30</div>
-                    <div className="sla">-87%</div>
+                    <div className="wssa secod_price">
+                      {selectedPrice || product.price}
+                    </div>
+                    <div className="sla">{product.sale_percent}%</div>
                   </div>
 
                   <div className="detailpirce">

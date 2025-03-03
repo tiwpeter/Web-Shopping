@@ -127,7 +127,7 @@ export default function CategoryPage() {
                               <Link href={`/pages/ProductDetail/${product.id}`}>
                                 <div className="jBwCF picture-wrapper">
                                   <img
-                                    src="https://p16-va.lemon8cdn.com/tos-alisg-v-a3e477-sg/o0I9vbnKjgYtn4AIA1WDEGCQcByeEwY1k2CeAD~tplv-tej9nj120t-origin.webp"
+                                    src={product.product_image}
                                     alt="{product.title}"
                                     width="200px"
                                     height="200px"
@@ -147,29 +147,43 @@ export default function CategoryPage() {
                                 <div className="sold">
                                   <span className="sold">
                                     <div>
-                                      <span className="soldreal">7,100</span>
+                                      <span className="soldreal">
+                                        {product.sold && (
+                                          <span className="soldreal">
+                                            {product.sold}
+                                          </span>
+                                        )}
+                                      </span>
                                       <span style={{ marginLeft: "5px" }}>
-                                        sold
+                                        {product.sold && (
+                                          <span style={{ marginLeft: "5px" }}>
+                                            sold
+                                          </span>
+                                        )}
                                       </span>
                                     </div>
                                   </span>
                                   <span className="brHcE"></span>
                                   <div>
-                                    <span className="ratingflex">
-                                      {Array.from({ length: 5 }, (_, index) =>
-                                        index < product.rating ? (
-                                          <i key={index} className="star"></i>
-                                        ) : (
-                                          <i
-                                            key={index}
-                                            className="star empty"
-                                          ></i>
-                                        )
-                                      )}
-                                      <span className="ratingadjust">
-                                        <span>({formatToK(product.sold)})</span>
+                                    {product.rating && (
+                                      <span className="ratingflex">
+                                        {Array.from({ length: 5 }, (_, index) =>
+                                          index < product.rating ? (
+                                            <i key={index} className="star"></i>
+                                          ) : (
+                                            <i
+                                              key={index}
+                                              className="star empty"
+                                            ></i>
+                                          )
+                                        )}
+                                        <span className="ratingadjust">
+                                          <span>
+                                            ({formatToK(product.sold)})
+                                          </span>
+                                        </span>
                                       </span>
-                                    </span>
+                                    )}
                                   </div>
                                 </div>
                               </div>
