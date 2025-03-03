@@ -17,11 +17,17 @@ const justForYou = (ratingThreshold, allProducts) => {
   return filteredProducts;
 };
 
-const formatToK = (count: number) => {
+// ฟังก์ชันแปลงตัวเลขให้เป็น K และใส่ `,`
+const formatToK = (count) => {
   if (count >= 1000) {
     return `${(count / 1000).toFixed(1)}k`;
   }
-  return `${count}`;
+  return count.toLocaleString(); // ใส่ , ให้ตัวเลข
+};
+
+// ฟังก์ชันฟอร์แมตราคา
+const formatPrice = (price) => {
+  return price.toLocaleString(undefined, { minimumFractionDigits: 2 });
 };
 
 const ProductAll = () => {
@@ -78,7 +84,7 @@ const ProductAll = () => {
                   </div>
                   {/* Price */}
                   <div className="price-flex1">
-                    <div className="price">฿{product.price}</div>
+                    <div className="price">฿{formatPrice(product.price)}</div>
                   </div>
                   <span className="brHcE"></span>
                   <div>
