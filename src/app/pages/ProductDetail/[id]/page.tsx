@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation"; // Import useRouter
 import { useCart } from "../../../CartContext";
 import "./detail.css";
 
@@ -27,6 +27,7 @@ type Product = {
 export default function ProductDetail() {
   const { id } = useParams();
   const [product, setProduct] = useState<Product | null>(null);
+  const router = useRouter(); // Initialize router for navigation
   const [selectedPrice, setSelectedPrice] = useState<number | null>(null);
 
   const [selectedOption, setSelectedOption] = useState<OptionDetail | null>(
@@ -88,6 +89,25 @@ export default function ProductDetail() {
 
     addToCart(selectedProduct);
     alert("เพิ่มลงตะกร้าเรียบร้อย!");
+  };
+
+  const handleBuyToCart = () => {
+    if (!product || !selectedOption) {
+      alert("กรุณาเลือกตัวเลือกก่อนเพิ่มลงตะกร้า");
+      return;
+    }
+
+    const selectedProduct = {
+      id: product.id,
+      name: product.name,
+      price: selectedOption.option_price,
+      image: selectedImage || product.images[0],
+      optionName: selectedOption.option_name,
+      quantity: 1,
+    };
+
+    addToCart(selectedProduct);
+    router.push("/pages/Cart"); // This will navigate to the /cart page
   };
 
   const handleThumbnailClick = (image: string) => {
@@ -308,7 +328,12 @@ export default function ProductDetail() {
                           <div className="blac"></div>
                           Add to cart
                         </button>
-                        <button className="buttonsell-B">ซื้อสินค้า</button>
+                        <button
+                          className="buttonsell-B"
+                          onClick={handleBuyToCart}
+                        >
+                          ซื้อสินค้า
+                        </button>
                       </div>
                     </div>
                   </div>
