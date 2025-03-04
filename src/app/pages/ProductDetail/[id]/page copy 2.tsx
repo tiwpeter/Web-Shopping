@@ -178,32 +178,7 @@ export default function ProductDetail() {
                         : product.name}
                     </span>
                   </div>
-                  <div className="rate">
-                    <button className="flex button_under">
-                      <div
-                        className="undeline color_undeline font_undeline"
-                        style={{ height: "20px" }}
-                      >
-                        4.6
-                      </div>
-                      <div className="star-rating">
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">★</span>
-                        <span className="star">☆</span>
-                        <span className="star">☆</span>
-                      </div>
-                    </button>
-                    <button className="flex custom-button">
-                      <div
-                        className="undeline color_undeline font_undeline"
-                        style={{ height: "20px" }}
-                      >
-                        722K
-                      </div>
-                      <div className="secod">ratings</div>
-                    </button>
-                  </div>
+
                   <div className="flex pr" style={{ marginTop: "10px" }}>
                     <div>
                       {/* แสดงราคาที่เลือก (หากไม่มีการเลือก, จะแสดงช่วงราคาตั้งต้น) */}

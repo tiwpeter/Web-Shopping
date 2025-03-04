@@ -47,7 +47,8 @@ export default function ProductDetail() {
           // ตั้งค่า option เริ่มต้น
           if (data.options.length > 0 && data.options[0].options.length > 0) {
             const defaultOption = data.options[0].options[0];
-            setSelectedOption(defaultOption); // Set default option without setting the image
+            setSelectedOption(defaultOption);
+            setSelectedImage(defaultOption.image_urls[0] || null); // Set default image if available
           }
         } else {
           console.error("Error:", data.error);
@@ -76,12 +77,11 @@ export default function ProductDetail() {
       return;
     }
 
-    // ตั้งค่า selectedImage เมื่อลูกค้ากดเพิ่มสินค้าลงตะกร้า
     const selectedProduct = {
       id: product.id,
       name: product.name,
       price: selectedOption.option_price, // ใช้ราคาของ option ที่เลือก
-      image: selectedImage || product.images[0], // เลือกรูปจากตัวเลือก, ถ้ายังไม่เลือกจะใช้รูปแรกจากหลัก
+      image: selectedImage || "",
       optionName: selectedOption.option_name, // บันทึกชื่อ option
       quantity: 1,
     };

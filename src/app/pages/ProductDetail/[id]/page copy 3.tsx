@@ -19,7 +19,6 @@ type Product = {
   id: number;
   name: string;
   price: number;
-  images: string[]; // Assuming product has images for the main image
   options: ProductOption[];
 };
 
@@ -47,7 +46,8 @@ export default function ProductDetail() {
           // ตั้งค่า option เริ่มต้น
           if (data.options.length > 0 && data.options[0].options.length > 0) {
             const defaultOption = data.options[0].options[0];
-            setSelectedOption(defaultOption); // Set default option without setting the image
+            setSelectedOption(defaultOption);
+            setSelectedImage(defaultOption.image_urls[0] || null);
           }
         } else {
           console.error("Error:", data.error);
@@ -61,6 +61,14 @@ export default function ProductDetail() {
 
     fetchProduct();
   }, [id]);
+
+  // เพิ่มสินค้าอัตโนมัติเมื่อตั้งค่า selectedOption
+  /*
+  useEffect(() => {
+    if (selectedOption && product) {
+      handleAddToCart(true); // ส่งค่า true เพื่อละเว้นการแจ้งเตือน
+    }
+  }, [selectedOption]);*/
 
   // เลือก option
   const handleOptionClick = (option: OptionDetail) => {
@@ -76,12 +84,11 @@ export default function ProductDetail() {
       return;
     }
 
-    // ตั้งค่า selectedImage เมื่อลูกค้ากดเพิ่มสินค้าลงตะกร้า
     const selectedProduct = {
       id: product.id,
       name: product.name,
       price: selectedOption.option_price, // ใช้ราคาของ option ที่เลือก
-      image: selectedImage || product.images[0], // เลือกรูปจากตัวเลือก, ถ้ายังไม่เลือกจะใช้รูปแรกจากหลัก
+      image: selectedImage || "",
       optionName: selectedOption.option_name, // บันทึกชื่อ option
       quantity: 1,
     };
@@ -98,17 +105,8 @@ export default function ProductDetail() {
           <h1>{product.name}</h1>
           <p>Starting Price: {product.price} บาท</p>
 
-          {/* แสดงรูปภาพหลักก่อน */}
-          {product.images && product.images.length > 0 ? (
-            <div className="fff">
-              <img
-                className="product-image"
-                src={selectedImage || product.images[0]} // ใช้ selectedImage ถ้ามีการเลือกภาพ, ไม่งั้นใช้ภาพแรกจาก array
-                alt={product.name}
-              />
-            </div>
-          ) : (
-            <p>No main image available</p> // ถ้าไม่มีภาพหลัก
+          {selectedImage && (
+            <img src={selectedImage} alt={product.name} width={200} />
           )}
 
           <p>Selected Option: {selectedOption?.option_name}</p>

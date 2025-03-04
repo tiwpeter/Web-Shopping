@@ -6,6 +6,7 @@ import "./detail.css";
 import { useCart } from "../../../CartContext"; //เก็บข้อมูลใส่ ตระกร้า
 
 export default function ProductDetail() {
+  const [isHovered, setIsHovered] = useState(false); // สถานะ hover
   const { id } = useParams(); // อ่านค่าจาก URL สำหรับ product id
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -15,6 +16,15 @@ export default function ProductDetail() {
   const [selectedOptionName, setSelectedOptionName] = useState(null); //สำหรับเก็บ option ที่เลือก
   const [selectedThumbnail, setSelectedThumbnail] = useState(null); //เพิ่มกรอบสีรอบรูปภาพเมื่อคลิกไ
   const { addToCart } = useCart();
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(null);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   // เพิ่ม state สำหรับจัดเก็บตัวเลือกที่เลือก
   const [selectedOption, setSelectedOption] = useState({
@@ -56,12 +66,13 @@ export default function ProductDetail() {
   }, [id]); // id คือตัวแปรที่ใช้ในการดึงข้อมูลสินค้า
 
   // ฟังก์ชันจัดการเมื่อคลิกที่ตัวเลือก
-  const handleOptionClick = (price, images, optionName) => {
+  const handleOptionClick = (price, images, optionName, index) => {
     setSelectedPrice(price);
-    setSelectedOptionName(optionName); // อัพเดตชื่อของตัวเลือก
+    setSelectedOptionName(optionName);
     if (images && images.length > 0) {
       setSelectedImage(images[0]);
     }
+    setSelectedOptionIndex(index); // บันทึกตัวเลือกที่ถูกเลือก
   };
 
   const handleThumbnailClick = (image) => {
@@ -268,15 +279,22 @@ export default function ProductDetail() {
                               <div className="options-container">
                                 {option.options.map((opt, idx) => (
                                   <button
-                                    className="button-cate"
-                                    key={idx} // ใช้ key ที่เป็น index หรือ identifier ที่ไม่ซ้ำกัน
+                                    className={`button-cate ${
+                                      isHovered || selectedOptionIndex === idx
+                                        ? "hover-active"
+                                        : ""
+                                    }`}
+                                    key={idx}
                                     onClick={() =>
                                       handleOptionClick(
                                         opt.option_price,
                                         opt.image_urls,
-                                        opt.option_name
+                                        opt.option_name,
+                                        idx
                                       )
-                                    } // ส่งราคาที่เลือกและ images ไป// เมื่อคลิกจะอัพเดตราคาที่เลือก
+                                    }
+                                    onMouseEnter={() => setIsHovered(true)}
+                                    onMouseLeave={() => setIsHovered(false)}
                                   >
                                     <div className="cate">
                                       {opt.image_urls &&

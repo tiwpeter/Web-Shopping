@@ -1,1 +1,9 @@
 state log 
+
+---
+
+ถ้า option 1 ตัวเป็นข้อมูลที่แบบ
+object มีชื่อ ข้างในก็มีข้อมูล
+
+แทนที่จะเก็บ size และ color เป็นแค่ string, เราจะเก็บ object ทั้งตัว
+ปรับ handleOptionClick ให้รับ option เป็น object แทน
